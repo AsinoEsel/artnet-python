@@ -1,0 +1,17 @@
+[project]
+name = "artnet-python"
+version = "0.0.1"
+description = "Library for sending and receiving ArtNet 4 (protocol 14) packages"
+readme = ""
+authors = [
+    { name = "Jan-Philipp Schröder", email = "jan.philipp.s@gmail.com" }
+]
+
+dependencies = []
+
+[tool.setuptools]
+packages = ["artnet"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
