@@ -61,7 +61,7 @@ def parse_poll_reply(data: bytes) -> ArtNetFieldDict:
         return None
 
     reply = dict(
-        IpAdress=".".join(map(str, struct.unpack("BBBB", data[10:14]))),
+        IpAddress=".".join(map(str, struct.unpack("BBBB", data[10:14]))),
         PortNumber=struct.unpack("<H", data[14:16])[0],
         VersInfo=struct.unpack("<H", data[16:18])[0],
         NetSwitch=data[18],
